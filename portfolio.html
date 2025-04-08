@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjai S | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #edf2f7, #e2e8f0);
+      color: #2d3748;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #1a202c;
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #f6e05e;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact a {
+      color: #63b3ed;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .contact a:hover {
+      color: #f6e05e;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 1.5rem auto;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: scale(1.01);
+    }
+
+    h2 {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.5rem;
+      color: #2c5282;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .project {
+      margin-bottom: 1.5rem;
+      background: #f7fafc;
+      padding: 1rem;
+      border-radius: 10px;
+      border-left: 4px solid #3182ce;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #2b6cb0;
+    }
+
+    .project a {
+      color: #3182ce;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+    }
+
+    .highlight {
+      background-color: #f6e05e;
+      color: #1a202c;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-title::before {
+      content: "🔥";
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="highlight">Sanjai S</span></h1>
+    <p>AI/ML Enthusiast | Full Stack Developer</p>
+    <div class="contact">
+      <p>📞 +91 6381086977 | 📧 <a href="mailto:sanjai4152@gmail.com">sanjai4152@gmail.com</a></p>
+      <p><a href="https://github.com/Sanjais07">GitHub</a> | <a href="https://www.linkedin.com/in/sanjai-s-694643269">LinkedIn</a></p>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <p>Passionate and dedicated professional with strong skills in AI, ML, and full-stack development. Proficient in Python, Java, React.js, and database management. I enjoy problem-solving, teamwork, and continuous learning.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Education</h2>
+    <p><strong>Coimbatore Institute of Technology</strong><br />M.Sc. in AI & ML (2022 – 2027) | CGPA: 8.22/10</p>
+    <p><strong>National Model Matriculation HSS</strong><br />12th: 90% | 10th: 98.6%</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Technical Skills</h2>
+    <ul>
+      <li><strong>Languages/Frameworks:</strong> Python, C, Java, Prolog, R, HTML, CSS, React.js, Node.js</li>
+      <li><strong>Tools:</strong> MySQL, MongoDB, AWS, Docker</li>
+      <li><strong>Soft Skills:</strong> Teamwork, Time Management, Leadership, Communication</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project">
+      <h3>Hand Gesture Recognition using OpenCV and MediaPipe</h3>
+      <p>This real-time system uses OpenCV and MediaPipe Hands to detect and recognize various hand gestures via webcam.</p>
+      <ul>
+        <li>Tracks 21 key hand landmarks with live gesture detection.</li>
+        <li>Recognizes Thumbs Up, Victory, Open Palm, and Unknown.</li>
+        <li>Displays results on-screen in real-time with multi-hand support.</li>
+        <li><strong>Tech:</strong> Python, OpenCV, MediaPipe</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/your-repo/hand-gesture-recognition" target="_blank">View Repo</a></li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>EarcareAI – AI-Powered Ear Health Monitoring</h3>
+      <p>Streamlit-based app for analyzing hearing health from audio input using unsupervised ML.</p>
+      <ul>
+        <li>Extracts MFCC & Mel Spectrogram features from .wav files.</li>
+        <li>Clusters data using K-Means into Safe, Moderate, High risk.</li>
+        <li>Interactive visualizations using t-SNE, PCA, Plotly.</li>
+        <li><strong>Tech:</strong> Streamlit, Librosa, Scikit-learn, Plotly</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/your-repo-name/ear-health-monitoring" target="_blank">View Repo</a></li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Jarvis – AI Voice Assistant</h3>
+      <p>A desktop-based AI voice assistant developed in Python.</p>
+      <ul>
+        <li>Uses SpeechRecognition and pyttsx3 for speech I/O.</li>
+        <li>Performs web searches, fetches weather/news, opens apps.</li>
+        <li>Integrated with OS for automation tasks.</li>
+        <li><strong>Tech:</strong> Python, SpeechRecognition, pyttsx3, Web APIs</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Mobile Phone Specification App</h3>
+      <p>React + MongoDB app that allows users to browse phone specs dynamically.</p>
+      <ul>
+        <li>Frontend filters specs by brand, RAM, processor.</li>
+        <li>Backend (Node.js) manages CRUD ops for phone data.</li>
+        <li>Supports dark mode and responsive UI.</li>
+        <li><strong>Tech:</strong> React.js, Node.js, MongoDB, Express</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Internships</h2>
+    <p><strong>Prodigy Infotech (Mar 2024)</strong> — Developed a weather forecast app with real-time data, APIs, and visualizations.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Leadership & Clubs</h2>
+    <ul>
+      <li>Class Representative (Jun – Dec 2024)</li>
+      <li>Video Editor, Students Development Club (Apr 2024 – Present)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Hackathons & Workshops</h2>
+    <ul>
+      <li>Innohacks (PSG Tech)</li>
+      <li>Paper Presentation at PSG iTech</li>
+      <li>Workshop on Large Language Models (Aug 2024)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Certifications</h2>
+    <ul>
+      <li>Virtual Cloud Computing - MyGreatLearning</li>
+      <li>Learning Analytics Tools - NPTEL (77%)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title">Extracurriculars</h2>
+    <p>NCC ‘A’ Certificate – Demonstrated discipline and commitment. Enjoys traveling, photography, and adventure sports.</p>
+  </section>
+</body>
+</html>
